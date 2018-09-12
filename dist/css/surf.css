@@ -1,0 +1,210 @@
+html {
+  font-family: proxima nova, sans-serif; }
+
+body {
+  width: 100%; }
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+h1 {
+  font-family: didot, serif;
+  font-size: 70px;
+  color: #0c2943; }
+
+h2 h1 {
+  font-family: didot, serif;
+  font-size: 70px;
+  color: #0c2943; }
+
+p {
+  font-size: 20px;
+  color: #0c2943; }
+
+a {
+  font-size: 16px;
+  color: #0c2943; }
+
+.hero__button {
+  background-color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  justify-content: center;
+  border-radius: 3px;
+  color: #0c2943;
+  font-size: 20px;
+  box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08); }
+  .hero__button:hover {
+    opacity: 0.8; }
+  .hero__button .fas {
+    padding-right: 10px; }
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(38, 84, 124, 0.5); }
+  .hero p {
+    text-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08); }
+  .hero .hero__video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1; }
+  .hero video {
+    min-width: 100%;
+    min-height: 100%; }
+  .hero nav {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 60px;
+    text-align: right; }
+  .hero .logo {
+    float: left;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: 600; }
+  .hero .desktop-nav a {
+    color: white;
+    text-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    padding-left: 40px; }
+  .hero .mobile-nav {
+    display: none; }
+  .hero .hero--content {
+    margin: 30vh 0 0 15%; }
+    .hero .hero--content p {
+      color: white;
+      margin-bottom: 30px;
+      opacity: 0.9; }
+    .hero .hero--content h1 {
+      color: white; }
+  .hero .hero__scroll {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1.7%;
+    bottom: 63px;
+    transform: rotate(270deg); }
+    .hero .hero__scroll p {
+      color: white;
+      font-size: 1em;
+      text-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08); }
+    .hero .hero__scroll .line {
+      height: 2px;
+      width: 70px;
+      margin-right: 10px;
+      background-color: white;
+      box-shadow: 0px 6px 22px 0px rgba(0, 0, 0, 0.08); }
+
+.flex {
+  width: 70%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px; }
+  .flex .flex--item {
+    margin: 50px;
+    flex: 1; }
+    .flex .flex--item img {
+      max-width: 100%; }
+    .flex .flex--item p {
+      margin: 15px 0 30px 0;
+      color: #0c2943;
+      opacity: 0.7;
+      line-height: 25px; }
+    .flex .flex--item a {
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none; }
+      .flex .flex--item a .fas {
+        margin-left: 10px; }
+    .flex .flex--item ul {
+      list-style: none;
+      display: flex; }
+      .flex .flex--item ul li {
+        margin: 0 1em 0 0;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: #0c2943; }
+        .flex .flex--item ul li .fas {
+          margin-right: 10px; }
+
+.image-section {
+  text-align: center;
+  margin: 5em 0; }
+  .image-section h2 {
+    margin-block-end: 0.5em; }
+  .image-section .images {
+    max-width: 1700px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; }
+    .image-section .images img {
+      width: 100%; }
+
+.line2 {
+  background-color: #0c2943;
+  height: 3px;
+  width: 80px;
+  margin: 5em auto 0 auto; }
+
+footer {
+  text-align: center;
+  margin-top: 10em; }
+  footer .fab {
+    padding: 10px;
+    vertical-align: middle; }
+  footer p {
+    margin: 1em 0 1em 0;
+    opacity: 0.5; }
+    footer p a {
+      font-size: 1em;
+      text-decoration: none; }
+
+@media screen and (max-width: 1600px) {
+  .flex {
+    width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  .flex {
+    flex-direction: column;
+    width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .flex {
+    width: 100%; }
+    .flex a {
+      font-size: 16px; }
+    .flex ul {
+      display: block; }
+      .flex ul li {
+        margin: 1.5em 0;
+        font-size: 16px; }
+  .flex--item h1 {
+    font-size: 50px; }
+  .flex--item h2 {
+    font-size: 50px; }
+  .flex--item p {
+    font-size: 16px; }
+  .flex--item i {
+    font-size: 16px; }
+  .hero__button {
+    font-size: 16px; } }
